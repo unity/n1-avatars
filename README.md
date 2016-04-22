@@ -1,4 +1,4 @@
+## Avatars for N1
 
-## My Package
-
-A sample package for N1. It demonstrates how to add components to the composer's action bar and the message sidebar. Enjoy!
+Simple, naive implementation of Avatars in the Message List.
+No caching, might do a lot of image requests.
