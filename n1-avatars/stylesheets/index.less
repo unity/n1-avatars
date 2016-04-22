@@ -1,0 +1,38 @@
+.message-subject-wrap, .thread-list-wide .list-column-Message {
+  .thread-avatar{
+    display: none !important;
+  }
+}
+
+.thread-list-narrow {
+  .list-tabular-item.focused {
+    .thread-avatar {
+      transition: all .2s cubic-bezier(0.35, 0.91, 0.41, 0.99);
+      transform: translate3d(-52px, 0px, 0px) scale(0.9)
+    }
+  }
+  .thread-injected-mail-labels {
+    .thread-avatar{
+      margin: 1px;
+      position: fixed !important;
+      top: 0px;
+      left: 0px;
+      transform: translate3d(-48px, 0px, 0px) scale(0.9);
+      transition: all .2s cubic-bezier(0.35, 0.91, 0.41, 0.99);
+    }
+  }
+  .icons-column{
+    width: 45px;
+    top: 46px;
+    flex-direction: row;
+    position: relative;
+  }
+
+}
+
+
+// .thread-list-narrow .list-column.list-column-Item {
+//   padding-left: 20px !important;
+// }
+
+
