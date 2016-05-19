@@ -5,32 +5,45 @@
 }
 
 .thread-list-narrow {
+
   .list-tabular-item.focused {
     .thread-avatar {
-      transition: all .2s cubic-bezier(0.35, 0.91, 0.41, 0.99);
-      transform: translate3d(-52px, 0px, 0px) scale(0.9)
+      transform: translate3d(0, 0px, 0px) scale(.8)
     }
   }
+
   .thread-injected-mail-labels {
     .thread-avatar{
       margin: 1px;
       position: fixed !important;
       top: 0px;
-      left: 0px;
-      transform: translate3d(-48px, 0px, 0px) scale(0.9);
+      left: 5px;
+      transform: translate3d(0, 0px, 0px) scale(1);
       transition: all .2s cubic-bezier(0.35, 0.91, 0.41, 0.99);
     }
   }
+
+  .list-tabular-item.focused {
+    .thread-avatar {
+      transition: all .2s cubic-bezier(0.35, 0.91, 0.41, 0.99);
+    }
+  }
+
   .icons-column{
     width: 45px;
-    top: 46px;
+    left: 5px;
+    top: 50px;
     flex-direction: row;
-    position: relative;
+    position: absolute;
+    margin-right: 0;
+  }
+
+  .list-tabular .list-column.list-column-Item{ 
+    padding-left: 20px;
+  }
+
+  .subject, .participants-wrapper, .snippet-and-labels {
+    margin-left: 55px;
   }
 
 }
-
-
-// .thread-list-narrow .list-column.list-column-Item {
-//   padding-left: 20px !important;
-// }

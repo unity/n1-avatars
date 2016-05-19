@@ -9,6 +9,7 @@ const LargeAvatar = AvatarFactory(42,'LargeAvatar');
 //
 export function activate() {
   ComponentRegistry.register( SmallAvatar, {role: 'ThreadListIcon'});
+  // See `thread-list-columns.cjsx#L132` -> In Narrow mode, Icons are limited to 1 because of UI issue. Hack around and use MailLabel for larger size
   ComponentRegistry.register( LargeAvatar, {role: 'Thread:MailLabel'});
 }
 
@@ -26,5 +27,5 @@ export function serialize() {
 //
 export function deactivate() {
   ComponentRegistry.unregister(SmallAvatar)
-  ComponentRegistry.unregister(LargeAvatar)
+  // ComponentRegistry.unregister(LargeAvatar)
 }
